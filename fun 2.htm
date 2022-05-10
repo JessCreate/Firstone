@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title> Book a consultation</title>
+        <link href="fun.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="tits">Book a consultation</h1><br>
+        <h3 id="des">Fill the boxes</h3><br>
+        First Name: <input type="text" id="one" placeholder="John"><br>
+        Last Name: <input type="text" id="two" placeholder="Doe"><br>
+        Location: <input type="text" id="three" placeholder="Continent, Country, State or Province, Town, Street, Number, Postal code"><br>
+        Age: <input type="text" id="four" placeholder="18+"><br>
+        Telephone: <input type="number" id="five" placeholder="000-000-0000"><br>
+        Date: <input type="text" id="six" placeholder="Weekday, Mounth, Day, Year"><br>
+        Category: <input type="text" id="seven" placeholder="mental/estate/commercial"><br>
+        Described Issue: <input type="text" id="eight"><br>
+        Animate/In-Animate things affected:  <input type="text" id="nine"><br>
+        <button onclick="sent()">Send</button>
+        <br><br><br>
+        <p id="p1"></p><br>
+        <p id="p2"></p><br>
+        <p id="p3"></p><br>
+        <p id="p4"></p><br>
+        <p id="p5"></p><br>
+        <p id="p6"></p><br>
+        <p id="p7"></p><br>
+        <p id="p8"></p><br>
+        <p id="p9"></p><br>
+        <p id="imprint"></p>
+
+
+        <script type="text/javascript">
+            function sent() {
+                var first = document.getElementById("one").value;
+                var last = document.getElementById("two").value;
+                var place = document.getElementById("three").value;
+                var age = document.getElementById("four").value;
+                var phone = document.getElementById("five").value;
+                var day = document.getElementById("six").value;
+                var catgry = document.getElementById("seven").value;
+                var issue = document.getElementById("eight").value;
+                var affect = document.getElementById("nine").value;
+
+                document.getElementById("imprint").innerHTML = "Info_sent";
+
+                document.getElementById("p1").innerHTML = first + "<br>";
+                document.getElementById("p2").innerHTML = last + "<br>";
+                document.getElementById("p3").innerHTML = place + "<br>";
+                document.getElementById("p4").innerHTML = age + "<br>";
+                document.getElementById("p5").innerHTML = phone + "<br>";
+                document.getElementById("p6").innerHTML = day + "<br>";
+                document.getElementById("p7").innerHTML = catgry + "<br>";
+                document.getElementById("p8").innerHTML = issue + "<br>";
+                document.getElementById("p9").innerHTML = affect + "<br>";
+
+                first = "";
+                last = "";
+                place = "";
+                age = "";
+                phone = "";
+                day = "";
+                catgry = "";
+                issue = "";
+                affect = "";
+
+            }
+
+        </script>
+        
+
+        <br>
+    </body>
+</html>  
